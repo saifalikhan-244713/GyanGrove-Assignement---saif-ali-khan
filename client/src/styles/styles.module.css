@@ -1,0 +1,61 @@
+.parent {
+  max-width: 1600px;
+  height: 100vh;
+  padding-top: 1px;
+}
+
+.header input {
+  border-radius: 0;
+}
+.header button[type="submit"] {
+  border-radius: 0 20px 20px 0;
+}
+.header input:first-child {
+  border-radius: 20px 0 0 20px;
+}
+.header input:last-child {
+  border-radius: 0 20px 20px 0;
+}
+tbody button {
+  width: 100px;
+}
+input {
+  border-color: rgb(128, 127, 127) !important;
+}
+th:first-child {
+  border-radius: 20px 0 0 0;
+}
+th:last-child {
+  border-radius: 0 20px 0 0;
+}
+
+@media screen and (max-width: 733px) {
+  .header input {
+    border-radius: 10px;
+  }
+  .header button[type="submit"] {
+    border-radius: 10px;
+  }
+  .header input:first-child {
+    border-radius: 10px;
+  }
+  .header input:last-child {
+    border-radius: 10px;
+  }
+}
+thead tr th {
+  background-color: rgb(63, 63, 63) !important;
+  color: white !important;
+}
+
+@media screen and (max-width: 540px) {
+  #tableParent {
+    width: 100%;
+    overflow-x: auto; 
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .table {
+    min-width: 600px;
+  }
+}
