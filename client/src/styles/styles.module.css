@@ -28,7 +28,9 @@ th:first-child {
 th:last-child {
   border-radius: 0 20px 0 0;
 }
-
+#categoryFilter{
+    margin-right: 5px;
+}
 @media screen and (max-width: 733px) {
   .header input {
     border-radius: 10px;
@@ -52,10 +54,14 @@ thead tr th {
   #tableParent {
     width: 100%;
     overflow-x: auto; 
-    -webkit-overflow-scrolling: touch;
   }
-
   .table {
     min-width: 600px;
   }
 }
+
+@media screen and (max-width: 250px) {
+    .parent{
+        width: 100vw;
+    }
+  }

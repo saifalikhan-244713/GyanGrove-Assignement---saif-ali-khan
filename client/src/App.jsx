@@ -159,21 +159,21 @@ const App = () => {
               </form>
             </div>
 
-            <div className="d-flex mt-5 gap-2">
-              <div className="mt-2 text-center">
-                <input
+            <div className="d-flex mt-5 justify-content-center flex-wrap gap-x-2">
+              <div className="mt-2 text-center" style={{width:"250px"}} id={styles.categoryFilter}>
+                <input style={{width:"250px"}}
                   type="text"
                   value={categoryFilter}
                   onChange={handleCategoryFilterChange}
-                  placeholder="Type or select category"
-                  className="form-control w-auto"
+                  placeholder="Filter By Category"
+                  className="form-control text-center"
                 />
               </div>
 
-              <div className="mt-2 text-center">
-                <button
+              <div className="mt-2 text-center" >
+                <button style={{width:"250px"}}
                   onClick={sortItemsByQuantity}
-                  className="btn btn-outline-primary  "
+                  className="btn btn-outline-primary"
                 >
                   Sort by Quantity
                 </button>
